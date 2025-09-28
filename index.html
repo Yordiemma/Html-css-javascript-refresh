@@ -2,56 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my page</title>
-  </head>
-  <b>
-    <!--Navbare-->
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#hobbies">Hobbies</a></li>
-      <li><a href="#contact me">Contact</a></li>
-    </ul>
-    <!--homepage-->
-    <h1 id="home">
-      Hello There <br />
-      My Name is Yordanos
-    </h1>
-    <p>
-      I’m from Ethiopia and a proud mother of one daughter. Welcome to my HTML
-      learning project.
-    </p>
-    <img
-      src="asset/yor.webp"
-      width="100px"
-      alt="profile image"
+    <title>To Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <!--About me-->
-    <h2 id="about">Get to know me</h2>
-    
-    <p>I have a Bachelor’s degree in Accounting from Admas University College.</p>
-
-    <p>
- I studied Computer Science for about one and a half years,   
- I paused those studies to start my new journey at Hyper Island, <br> 
- where I am now focusing on Frontend Development.
-    </p>
-    <p>I also completed a 1-year Introduction to Software Engineering certificate at ALX.</p>
-    <p>Now i'm contnuing my journey into tech with Hyprt island,</p>
-    <!--Edication-->
-    <h2 id="education">Education</h2>
-    <ul>
-      <li>
-        <a href="https://admasuniversity.edu.et/">Admas University</a>
-      </li>
-      <li><a href="https://alx.training/en/">ALX Academy</a></li>
-      <li><a href="https://www.uopeople.edu/">Univisty of the people</a></li>
-    </ul>
-    <!--Hobbies-->
-    <h2 id="hobbies">My Hobbies</h2>
-    <!--My Goal-->
-    <!--Contact me -->
-  
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="form">
+      <input
+        type="text"
+        class="input"
+        placeholder="Enter your task"
+        autocomplete="off"
+      />
+      <ul class="list">
+        <!-- <li>
+          Buy Milk <i class="fas fa-check-square"></i
+          ><i class="fas fa-trash"></i>
+        </li>
+        <li class="checked">
+          Call David <i class="fas fa-check-square"></i
+          ><i class="fas fa-trash"></i>
+        </li> -->
+      </ul>
+    </form>
+    <script src="script.js"></script>
+  </body>
 </html>
