@@ -2,9 +2,9 @@ const formEl = document.querySelector(".form");
 const inputEl = document.querySelector(".input");
 const ulEl = document.querySelector(".list");
 
-let list = JSON.parse(localStorage.getItem("list")) || []; // ✅ load saved list first
+let list = JSON.parse(localStorage.getItem("list")) || []; //  load saved list first
 
-list.forEach((task) => {   // ✅ correct syntax and pass task
+list.forEach((task) => {   
     toDoList(task);
 });
 
@@ -16,7 +16,7 @@ formEl.addEventListener("submit", (event) => {
 function toDoList(task) {
   let newTask = inputEl.value;
   if (task) {
-    newTask = task.name;   // ✅ restore saved task name
+    newTask = task.name;   // restore saved task name
   }
 
     const liEl = document.createElement("li");
@@ -36,7 +36,7 @@ function toDoList(task) {
   trashBtnEl.innerHTML = `<i class="fas fa-trash"></i>`;
   liEl.appendChild(trashBtnEl);
 
-  if (task && task.checked) {  // ✅ restore checked state
+  if (task && task.checked) {  //  restore checked state
     liEl.classList.add("checked");
   }
 
